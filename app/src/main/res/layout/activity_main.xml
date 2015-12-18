@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <SurfaceView android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="-20.0dip">
+    </SurfaceView>
+    <!--  照片  -->
+    <ImageView
+        android:id="@+id/imag1"
+        android:layout_weight="1.0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--  快照  -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="72.0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_camera_pattern">
+        <ImageView
+            android:id="@+id/shutter"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shutter"/>
+    </LinearLayout>
+</LinearLayout>
